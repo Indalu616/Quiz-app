@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Simple Quiz application</h1>
+      <div class="score-board">
+        <p id="score-cont">Score: <span id="score">0</span></p>
+      </div>
+
+      <div class="quiz">
+        <p id="question-text">Question goes here...</p>
+        <p id="feed-back">You scored well</p>
+        <div class="answer-buttons" id="answer-cont">
+          <button class="btn" id="btn-1">Answer-1</button>
+          <button class="btn" id="btn-2">Answer-2</button>
+          <button class="btn" id="btn-3">Answer-3</button>
+          <button class="btn" id="btn-4">Answer-4</button>
+        </div>
+        <div class="next">
+          <button id="next-btn">Next</button>
+          <button id="restart-btn">Restart</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

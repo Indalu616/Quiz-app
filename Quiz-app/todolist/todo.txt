@@ -1,0 +1,9 @@
+-create an array of questions object;
+-each question object in the array should have answers object along with the correct one;
+
+-create a function that starts the question
+    -this function sets the first question along with the answers to the frontend
+    -it initialise the score to zer0, index 0 
+-create a function that check the answer
+-create a function that resets the previous child from the answer buttons
+-

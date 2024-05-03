@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+body {
+  background-color: #fafafa;
+}
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 60%;
+  margin: 40px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1), -2px -2px 2px rgba(0, 0, 0, 0.1);
+}
+.score-board {
+  position: absolute;
+  right: 40px;
+  top: 50px;
+}
+
+.container h1 {
+  font-size: 30px;
+  font-weight: 200;
+  border-bottom: 2px solid black;
+}
+.quiz {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.answer-buttons {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.answer-buttons button {
+  width: 100%;
+  margin: 10px 0px;
+  padding: 15px;
+  text-align: left;
+  cursor: pointer;
+}
+.next {
+  width: 18%;
+}
+.next button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  outline: none;
+  font-size: 20px;
+}
+.correct {
+  background-color: green;
+}
+.incorrect {
+  background-color: red;
+}
+.disabled {
+  cursor: no-drop;
+  cursor: no-drop;
+}
+.selected-btn::after {
+  content: "  ✅";
+}
+.wrong::after {
+  content: "  X";
+}
